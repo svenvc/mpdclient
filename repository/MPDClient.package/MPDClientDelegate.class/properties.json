@@ -1,0 +1,18 @@
+{
+	"category" : "MPDClient",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 11/4/2015 22:37",
+	"instvars" : [
+		"host",
+		"port",
+		"client",
+		"state",
+		"mutex" ],
+	"name" : "MPDClientDelegate",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

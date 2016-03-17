@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfMPDClient",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "SvenVanCaekenberghe 3/17/2016 15:04",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfMPDClient",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

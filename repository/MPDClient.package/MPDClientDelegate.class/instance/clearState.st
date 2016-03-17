@@ -1,0 +1,3 @@
+private
+clearState
+	state := nil
