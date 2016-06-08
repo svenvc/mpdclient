@@ -1,6 +1,6 @@
 # MPDClient
 
-The MPDClient project offers a client side interface to the Linux Music Player Daemon at the protocol level (MPDClient) as well as a web app (MPDClientDelegate). 
+The MPDClient project offers a client side interface to the Linux Music Player Daemon at the protocol level (MPDClient) as well as a web app (MPDClientDelegate) for Pharo.
 
 ````
 Metacello new
@@ -57,16 +57,35 @@ MPDClient is a support object offering an object oriented interface to talk to a
 - http://www.musicpd.org/
 - http://www.musicpd.org/doc/protocol/index.html
 
-Here are some usage examples (normally the same instance should be kept and reused for efficiency).
+Here are some usage examples (normally the same instance should be kept and reused for efficiency). Not specifying a host implies localhost.
 
 ````
 (MPDClient new host: 'audio359') currentSong.
 
-"a Dictionary(#Album->'Aqualung' #AlbumArtist->'Jethro Tull' #Artist->'Jethro Tull' #Date->1990 #Disc->1 #Genre->'Pop Rock' #Id->98 #'Last-Modified'->'2016-05-04T21:58:42Z' #Pos->3 #Time->233 #Title->'Mother Goose' #Track->4 #file->'USB/Jethro Tull/Aqualung/04-Mother_Goose.flac' )"
+"a Dictionary(
+  #Album->'Aqualung' 
+  #AlbumArtist->'Jethro Tull' 
+  #Artist->'Jethro Tull' 
+  #Date->1990 #Disc->1 
+  #Genre->'Pop Rock' 
+  #Id->98 
+  #'Last-Modified'->'2016-05-04T21:58:42Z' 
+  #Pos->3 
+  #Time->233 
+  #Title->'Mother Goose' 
+  #Track->4 
+  #file->'USB/Jethro Tull/Aqualung/04-Mother_Goose.flac' )"
 
 (MPDClient new host: 'audio359') stats. 
 
-"a Dictionary(#albums->263 #artists->206 #db_playtime->740233 #db_update->1462810813 #playtime->24455 #songs->2536 #uptime->631582 )"
+"a Dictionary(
+  #albums->263 
+  #artists->206 
+  #db_playtime->740233 
+  #db_update->1462810813 
+  #playtime->24455 
+  #songs->2536 
+  #uptime->631582 )"
 
 (MPDClient new host: 'audio359') pause.
 
@@ -76,3 +95,6 @@ Here are some usage examples (normally the same instance should be kept and reus
 
 "a Dictionary()"
  ````
+
+Make sure you understand how MPD works, with its play queue, then read the source code. Reading the spec might be helpful too. At the moment, this is little project is a function hack, nothing more.
+
