@@ -15,25 +15,27 @@ Written by Sven Van Caekenberghe for http://Audio359.eu
 
 MPDClientDelegate provides a simple, remote control style web interface to MPD. The web app was written for my personal use and taste, YMMV. There are 3 main views, mirroring the concepts behind MPD itself. Here are some screenshots.
 
-The primary playback view
+### The primary playback view
 
 ![Image](https://raw.githubusercontent.com/svenvc/mpdclient/master/screenshots/playback.png)
 
-The playlist view
+### The playlist view
 
 ![Image](https://raw.githubusercontent.com/svenvc/mpdclient/master/screenshots/playlist.png)
 
-The primary library view
+### The primary library view
 
 ![Image](https://raw.githubusercontent.com/svenvc/mpdclient/master/screenshots/library.png)
 
-The library view, inside an artitst's folder
+### The library view, inside an artitst's folder
 
 ![Image](https://raw.githubusercontent.com/svenvc/mpdclient/master/screenshots/library-artist.png)
 
-The playback details view
+### The playback details view
 
 ![Image](https://raw.githubusercontent.com/svenvc/mpdclient/master/screenshots/playback-details.png)
+
+### Getting started
 
 Here is one way to start the web app
 
@@ -48,6 +50,11 @@ ZnServer default delegate map: #/ to: #mpdc.
 
 ZnServer stopDefault.
 ````
+
+### Usage
+
+Browse the MPD library, clicking on individual tracks or playlist adds those to the main playlist. To add an album to the main playlist, click on the album's title in the top crumb trail (this is always the last element). To play music, go to the playback view and click play. There is no automatic refresh, this is by design.
+
 
 ## MDPClient
 
@@ -96,5 +103,5 @@ Here are some usage examples (normally the same instance should be kept and reus
 "a Dictionary()"
  ````
 
-Make sure you understand how MPD works, with its play queue, then read the source code. Reading the spec might be helpful too. At the moment, this is little project is a function hack, nothing more.
+Make sure you understand how MPD works, with its play queue, then read the source code. Reading the spec might be helpful too. At the moment, this is little project is a functional hack, nothing more.
 
