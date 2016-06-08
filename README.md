@@ -67,6 +67,27 @@ MPDClient is a support object offering an object oriented interface to talk to a
 Here are some usage examples (normally the same instance should be kept and reused for efficiency). Not specifying a host implies localhost.
 
 ````
+(MPDClient new host: 'audio359') status.
+
+ "a Dictionary(
+   #audio->'44100:16:2'
+   #bitrate->618
+   #consume->0
+   #elapsed->54.659
+   #mixrampdb->0.0
+   #nextsong->1
+   #nextsongid->107
+   #playlist->31
+   #playlistlength->8
+   #random->0
+   #repeat->0
+   #single->0
+   #song->0
+   #songid->106
+   #state->'play'
+   #time->'55:291'
+   #volume->95 )"
+ 
 (MPDClient new host: 'audio359') currentSong.
 
 "a Dictionary(
